@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#grid{
+    display: grid;
+    /* background-color: red; */
+    grid-template-columns: 20% 1fr  ;
+    grid-template-rows:  10% 1fr 15%; 
+    width: 100vw;
+    height: 100vh;
+}
+
+#grid div{
+   
+    border: 1px solid black;
+   
+    
+}
+
+
+#grid div:nth-child(2n+1){
+    /* background-color: blue; */
+}
+
+#grid div:nth-child(2n){
+    /* background-color: yellow; */
+}
+
+.sq1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: black;
+}
+
+.sq3{
+    grid-column-start: 2;
+    grid-column-end: 3;
+  
+}
+
+.sq4{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: black;
+    color: white;
+}
